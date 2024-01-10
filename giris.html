@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Kullanıcı Girişi</title>
+    <link rel="icon" href="img/favicon3.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/stylesindex.css">
+</head>
+
+<body>
+
+    <!--! header section start -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="img/AnyConv.com__1c54f7b06d7723c21afc5035bf88a5ef.webp" alt="logo">
+        </a>
+        <nav class="navbar">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="index.html#about">Hakkımda</a>
+            <a href="ozgecmis.html">Özgeçmiş</a>
+            <a href="index.html#services">Hizmetler</a>
+            <a href="index.html#portfolio">Portfolyo</a>
+            <a href="blog.html">Blog</a>
+            <a href="index.html#contact">İletişim</a>
+            <a href="giris.html">Giriş Yap</a>
+        </nav>
+
+        <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Aramak için yazın...">
+        </div>
+
+        <div class="lang-menu">
+            <div class="selected-lang">
+                <p>Türkçe</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html" class="tr">Türkçe</a>
+
+                </li>
+                <li>
+                    <a href="index'en'.html" class="en">English</a>
+
+                </li>
+                <li>
+                    <a href="index'de'.html" class="de">Deutsch</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--! header section end -->
+
+
+    <!-- Kullanıcı girisi section start-->
+
+    <div class="login-container">
+        <h2>Kullanıcı Girişi</h2>
+        <form class="login-form" action="/login" method="post">
+            <div class="form-group">
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Şifre:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" id="rememberMe" name="rememberMe">
+                <label for="rememberMe">Beni Hatırla</label>
+            </div>
+            <button class="action-btn" type="submit">Giriş Yap</button>
+
+            <a href="kayitol.html">Kayıt Ol</a>
+        </form>
+    </div>
+
+    <!-- Kullanıcı girisi section End-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
