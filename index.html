@@ -23,61 +23,41 @@
 <body>
     <!--! header section start -->
     <header class="header">
-        <a href="index.html" class="logo">
-            <img src="img/AnyConv.com__1c54f7b06d7723c21afc5035bf88a5ef.webp" alt="logo">
-        </a>
-        <nav class="navbar">
-            <a href="#home">Ana Sayfa</a>
-            <a href="#about">Hakkımda</a>
-            <a href="ozgecmis.html">Özgeçmiş</a>
-            <a href="#services">Hizmetler</a>
-            <a href="#portfolio">Portfolyo</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">İletişim</a>
-            <a href="giris.html">Giriş Yap</a>
-        </nav>
-
-
-
-        <div class="search-box">
-            <button class="btn-search"><i class="fas fa-search"></i></button>
-            <input type="text" class="input-search" placeholder="Aramak için yazın...">
-        </div>
-
-        <div class="lang-menu">
-            <div class="selected-lang">
-                <p>Türkçe</p>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="img/AnyConv.com__1c54f7b06d7723c21afc5035bf88a5ef.webp" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">Hakkımda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#services">Servisler</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#portfolio">Portfolyo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="giris.html">Giriş Yap</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul>
-                <li>
-                    <a href="index.html" class="tr">Türkçe</a>
-
-                </li>
-                <li>
-                    <a href="index'en'.html" class="en">English</a>
-
-                </li>
-                <li>
-                    <a href="index'de'.html" class="de">Deutsch</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
-        <div class="dropdown-menu">
-            <a href="giris.html">Giriş Yap</a>
-            <a href="#home">Ana Sayfa</a>
-            <a href="#about">Hakkımda</a>
-            <a href="ozgecmis.html">Özgeçmiş</a>
-            <a href="#services">Hizmetler</a>
-            <a href="#portfolio">Portfolyo</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">İletişim</a>
-        </div>
-
+        </nav>
 
     </header>
     <!--! header section end -->
@@ -88,9 +68,7 @@
     <section class="home" id="home">
         <div class="content">
             <h3>Merhaba... Ben <span>ANIL ONGAN</span></h3>
-            <p> Kişisel bloğuma ve portfolyo siteme hoş geldiniz.</p>
-            <p> Sizlerle Projelerimi ve yazılım alanındaki çalışmalarımı sunacağım bu sitemin </p>
-            <p> içeriğini geliştirmek üzere çalışmalarıma devam ediyorum.</p>
+            <p> Merhaba! Yaratıcılığımı ve deneyimimi buluşturduğum dijital dünyaya hoş geldiniz. <br> Benim dünyamda, tasarım ve teknoloji bir araya gelerek <br> benzersiz ve etkileyici deneyimler yaratmamı sağlıyor. <br> Sizi kendi hikayelerime, projelerime ve yeteneklerime davet ediyorum. <br> İyi gezinmeler!
 
             <div class="resume">
                 <div class="share">
@@ -436,7 +414,7 @@
                 <input type="text" name="subject" id="subject" placeholder="Konu">
 
                 <textarea name="message" cols="30" rows="10" placeholder="Mesaj"></textarea>
-                <input id="send-btn" type="submit" value="Send">
+                <input class="btn" id="send-btn" type="submit" value="Send">
             </form>
 
         </div>
