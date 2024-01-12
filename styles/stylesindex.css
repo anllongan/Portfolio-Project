@@ -121,10 +121,18 @@ a {
     width: fit-content;
 }
 
+.header .navbar .container-fluid .navbar-toggler{
+    background-color: white;
+    margin: 10px;
+    padding: 0;
+    width: 40px;
+}
+
 .header .navbar .container-fluid .collapse a{
     color: whitesmoke;
-    font-size: 17px;
-    padding: 15px 30px;
+    font-size: 10px;
+    padding: 5px 5px;
+    width: max-content;
     transition: 1s ease;
 }
 
@@ -1021,26 +1029,34 @@ form #send-btn:hover {
 /* MEDİA QUERİES Start */
 
 /* Small devices (phones, 576px and up)*/
-@media (max-width: 500px) {
+@media (max-width: 414px) {
     body p {
-        overflow-x: hidden;
         font-size: 12px;
     }
 
     body {
         width: 414px;
+        overflow-x: hidden;
     }
 
     .header .navbar .container-fluid img {
-        width: max-content;
+        width: 50px;
+        transform: scale(1.7);
         height: auto;
     }
 
     .header .navbar .collapse {
         color: white;
         width: 390px;
+        
         margin: 0;
         padding: 0;
+    }
+
+    .header .navbar .container-fluid .navbar-toggler{
+        font-size: 15px;
+        opacity: 0.5;
+        border-radius: 10px;
     }
 
 
@@ -1077,6 +1093,7 @@ form #send-btn:hover {
     }
     
     .about{
+        width: 400px;
         height: max-content;
         display: block;
         margin: 10px;
@@ -1085,7 +1102,7 @@ form #send-btn:hover {
 
 
     .about .container{
-        width: 414px;
+        width: 400px;
         height: fit-content;
         padding: 10px;
     }
@@ -1096,9 +1113,9 @@ form #send-btn:hover {
     }
 
     .about .container img{
-        width: 100px;
+        width: 90px;
         height: auto;
-        margin: 2rem;
+        margin: 1rem;
         padding: 0;
 
 
@@ -1107,6 +1124,11 @@ form #send-btn:hover {
     .about h1{
         margin: 0 20px;
         font-size: 14px;
+    }
+
+    .about .text{
+        padding: 10px ;
+        margin-right: 40px;
     }
 
     .about p{
@@ -1118,7 +1140,7 @@ form #send-btn:hover {
     }
 
     .skills{
-        margin: 5px 10px;
+        margin: 5px 20px;
         padding: 0;
     }
 
@@ -1147,11 +1169,11 @@ form #send-btn:hover {
     }
 
     .skills .left-col .container .bookname{
-        font-size: 10px;
-        margin: 0;
-        padding:30px 8px;
-        width: 80px;
-        height: 80px;
+        font-size: 8px;
+        margin: 20px 0;
+        padding:0px 8px;
+        width: 90px;
+        height: 50px;
     }
 
     .skills .right-col{
@@ -1211,18 +1233,19 @@ form #send-btn:hover {
         height: max-content;
     }
     .services .services-list div {
-        width: 250px;
+        width: 200px;
         padding: 0;
-        margin-left: 40px;
-        height: 400px;
+        margin-left: 60px;
+        height: 350px;
     }
 
 
     .services .services-list div i{
         transform: scale(0.5);
+        margin-bottom: 10px;
     }
     .services .services-list div h2{
-        font-size: 15px;
+        font-size: 13px;
         padding-left: 15px;
         margin: 0;
     }
@@ -1230,7 +1253,7 @@ form #send-btn:hover {
     .services .services-list div p{
         padding-left: 10px;
         padding-top: 10px;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .services .services-list div a{
@@ -1240,24 +1263,26 @@ form #send-btn:hover {
 
     .portfolio {
         padding: 0;
-        margin: 20px;
-        width: 414px;
+        margin: 20px 0 20px 10px;
+        width: 400px;
         height: 700px;
     }
 
     .portfolio h1 {
         font-size: 15px;
+        padding-left: 20px;
     }
 
     .portfolio .carousel {
-        width: 400px;
+        width: 360px;
+        margin-left: 10px;
         float: left;
     }
 
     .portfolio .portfolio_links{
         padding: 0;
         margin: 0;
-        width: 400px;
+        width: 380px;
         height: 400px;
         
     }
@@ -1266,7 +1291,7 @@ form #send-btn:hover {
         padding: 50px 0;
         margin: 0;
         display: block;        
-        width: 300px;
+        width: 150px;
         height: 300px;
     }
 
@@ -1283,7 +1308,8 @@ form #send-btn:hover {
 
 
     .blog {
-        margin: 0 20px;
+        width: 380px;
+        margin: 0 10px;
         padding: 0;
     }
 
@@ -1345,6 +1371,19 @@ form #send-btn:hover {
         font-size: 10px;
         margin: 10px;
         border: 1px solid white;
+    }
+
+    #contact {
+        width: 400px;
+    }
+
+    #contact h1{
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    #contact .contact-info{
+        margin: 50px;
     }
 
     #contact .form{
