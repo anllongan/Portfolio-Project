@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,900&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Roboto+Slab:wght@900&display=swap');
 
 :root {
     --main-color: #ffffff;
@@ -57,6 +58,8 @@ html::-webkit-scrollbar-thumb {
 
 
 body {
+    position: relative;
+    height: 100%;
     background-color: var(--background-color);
     color: #fff;
 }
@@ -103,9 +106,11 @@ a {
     padding: 0;
 }
 
+
 .header .navbar .container-fluid{
     background-color: rgb(0, 0, 0);
 }
+
 
 .header .navbar .container-fluid img{
     max-width: 6%;
@@ -114,12 +119,14 @@ a {
     margin: 0;
 }
 
+
 .header .navbar .container-fluid .collapse{
     margin: 10px 300px;
     text-align: left;
     float: right;
     width: fit-content;
 }
+
 
 .header .navbar .container-fluid .navbar-toggler{
     background-color: white;
@@ -128,13 +135,15 @@ a {
     width: 40px;
 }
 
+
 .header .navbar .container-fluid .collapse a{
     color: whitesmoke;
-    font-size: 10px;
-    padding: 5px 5px;
+    font-size: 15px;
+    padding: 5px 10px;
     width: max-content;
     transition: 1s ease;
 }
+
 
 .header .navbar .container-fluid .collapse a:hover{
     transform: scale(1.1);
@@ -154,10 +163,11 @@ a {
     height: fit-content;
     background: url(../img/AnyConv.com__Başlıksız-22.webp) no-repeat;
     background-size:40%;
-    background-position: right 0% top 10px;
+    background-position: right bottom 50%;
     display: flex;
     margin-top: 0rem;  
 }
+
 
 .home .content h3 {
     font-size: 3rem;
@@ -173,10 +183,25 @@ a {
 
 
 .home .content p {
+    font-family: 'Fira Code', monospace;
     font-size: 20px;
     text-align: left;
     padding-bottom: 4px;
+    margin-bottom: 100px;
     text-transform: initial;
+}
+
+.home .content p span{
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.home .content #demo{
+    margin: 200px 50px 40px 0;
+    font-family: 'Fira Code', monospace;
+    color: #c5927a;
+    font-size: 30px;
 }
 
 
@@ -190,7 +215,6 @@ a {
 }
 
 
-
 .home .share {
     font-size: 25px;
     padding-top: 2rem;
@@ -198,7 +222,6 @@ a {
     height: fit-content;
     color: #03f4bc;
 }
-
 
 
 /*! home end */
@@ -213,8 +236,8 @@ a {
 
 
 .about {
-    margin: 200px 0 100px 0;
-    padding: 200px 200px;
+    margin: 120px 0;
+    padding: 100px 200px;
     width: 100%;
     height: 500px;
     display: inline-block;
@@ -224,12 +247,12 @@ a {
 }
 
 
-.about h1 {
-    padding: 0;
-    font-size: 25px;
-    color: #fff;
-    margin: 0;
 
+.about #demo2 {
+    margin: 200px 50px;
+    font-family: 'Fira Code', monospace;
+    color: #c5927a;
+    font-size: 30px;
 }
 
 
@@ -249,6 +272,7 @@ a {
     box-shadow: -1px 1px 25px 0.1px rgba(3, 244, 188, 1);
 }
 
+
 .about .text{
     vertical-align: middle;
     padding-top: 7%;
@@ -265,8 +289,9 @@ a {
     vertical-align: middle;
 }
 
+
 .skills{
-    margin: 100px 100px 100px 100px;
+    margin: 0 100px 100px 100px;
     padding: 0;
     width: 88%;
     height: fit-content;
@@ -275,11 +300,12 @@ a {
     justify-content: space-between;
 }
 
+
 .skills h2{
     text-align: center;
     font-size: 25px;
-
 }
+
 
 .skills .left-col{
     display: block;
@@ -287,34 +313,36 @@ a {
     justify-content: space-between;
     float: left;
     width: 45%;
-    margin-left: 100px;
-    
+    margin-left: 100px; 
 }
+
 
 .skills .left-col h2{
     text-align: left;
     padding-left: 20px;
 }
 
+
 .skills .left-col .container{
     margin: 50px 15px ;
     display: flex;
     position: relative;
     width: 400px;
-    
 }
+
 
 .skills .left-col .container img{
     width: 100px;
     height: 150px;
 }
 
+
 .skills .left-col .container p{
     padding: 75px 30px;
     text-transform: initial;
     font-size: 17px;
-    
 }
+
 
 .skills .right-col{
     display: block;
@@ -322,13 +350,14 @@ a {
     justify-content: space-between;
     width: 45%;
     float: right;
-    
 }
+
 
 .skills .right-col h2{
     text-align: left;
     padding-left: 20px;
 }
+
 
 .skills .right-col .container{
     margin: 60px 15px;
@@ -337,20 +366,18 @@ a {
     width: 400px;
 }
 
+
 .skills .right-col .container img{
     width: 60px;
     height: 60px;
 }
 
+
 .skills .right-col .container p{
     padding: 30px 30px;
     text-transform: initial;
     font-size: 17px;
-
 }
-
-
-
 
 /*! about end */
 
@@ -366,9 +393,7 @@ a {
     display: block;
     width: 100%;
     height: 800px;
-    padding-top: 100px;
 }
-
 
 
 .services .container div {
@@ -384,11 +409,12 @@ a {
 }
 
 
-.services .container h1 {
-    position: relative;
+.services .container #demo3 {
     text-align: center;
-    color: #fff;
-    font-size: 25px;
+    margin: 200px 50px;
+    font-family: 'Fira Code', monospace;
+    color: #c5927a;
+    font-size: 30px;
 }
 
 
@@ -399,14 +425,11 @@ a {
 
 
 .services-list {
-
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 100%));
+    grid-gap: 2rem;
     margin-top: 50px;
-    width: 100%;
     max-height: 700px;
-
 }
 
 
@@ -472,7 +495,7 @@ a {
 
 .portfolio {
     position: relative;
-    padding: 200px 90px 100px 90px;
+    padding: 60px 90px 100px 90px;
 }
 
 
@@ -481,13 +504,23 @@ a {
 }
 
 
-.portfolio .carousel {
-    justify-content: center;
-    margin: auto;
-    margin-top: 50px;
-    max-width: 1000px;
+.swiper {
+    width: 70%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 700px;
+    height: 600px;
+}
 
+.swiper-slide img {
+    display: block;
+    width: 600px;
+    height: 400px;
 }
 
 
@@ -508,10 +541,12 @@ a {
     transition: 1s ease;
 }
 
+
 .portfolio .portfolio_links .portfolio_container:hover{
     transform: scale(1.10) translateY(-30px);
 
 }
+
 
 .portfolio .portfolio_links .portfolio_container img{
     width: 300px;
@@ -520,6 +555,7 @@ a {
     left: 50%;
     transform: translateX(-50%);
 }
+
 
 .portfolio .portfolio_links .portfolio_container a{
     display: block;
@@ -552,7 +588,8 @@ a {
 
 
 .blog {
-    padding: 100px 90px;
+    padding: 50px 90px;
+    padding-bottom: 100px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -580,8 +617,9 @@ a {
 
 .blog .left-col {
     width: 70%;
-    margin: 50px 0 100px 30px;
+    margin: 50px 0 50px 30px;
 }
+
 
 .blog .left-col .container-num .containerId {
     position: relative;
@@ -594,9 +632,10 @@ a {
     opacity: 0.1;
 }
 
+
 .blog .left-col .container {
     opacity: 0.5;
-    max-width: 1000px;
+    width: 1200px;
     display: inline-block;
     position: flex;
     justify-content: flex-start;
@@ -607,10 +646,12 @@ a {
     transition: 1s ease;
 }
 
+
 .blog .left-col .container:hover {
     transform: scale(1.03);
     opacity: 1;
 }
+
 
 .blog .left-col .container .content-left-col img {
     width: auto;
@@ -619,17 +660,20 @@ a {
     float: left;
 }
 
+
 .blog .left-col .container .content-right-col {
     float: left;
     margin-left: 30px;
-    max-width: 650px;
+    max-width: 800px;
     height: 190px;
     font-size: 17px;
 }
 
+
 .blog .left-col .container .content-right-col p {
     display: flex;
 }
+
 
 .blog .left-col .container .content-right-col a {
     font-family: 'Poppins', sans-serif;
@@ -643,24 +687,14 @@ a {
     border-radius: 8px;
     padding: 3px 10px;
     transition: 1s ease;
-
 }
+
 
 .blog .left-col .container .content-right-col:hover a {
     background-color: white;
     color: black;
     font-weight: 400;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /*! Blog End */
@@ -774,7 +808,6 @@ form textarea {
 }
 
 
-
 form #send-btn:hover {
     background: rgb(87, 226, 194);
     color: black;
@@ -794,8 +827,8 @@ form #send-btn:hover {
 
 /*! Footer Start */
 
-
 .footer {
+    width: 100%;
     padding: 15px 16%;
     background: #202020;
     color: #fff;
@@ -806,6 +839,7 @@ form #send-btn:hover {
     gap: 2rem;
     height: 60px;
 }
+
 
 .copyright p {
     font-size: 10px;
@@ -826,20 +860,16 @@ form #send-btn:hover {
 
 }
 
-
 /*! Footer End */
-
-
-
 
 
 
 /* CV Start */
 
-
 .resume {
     margin: 0;
 }
+
 
 .resume .cv {
     justify-content: center;
@@ -897,7 +927,6 @@ form #send-btn:hover {
     margin: 5% 0% 10% 40%;
     -webkit-box-shadow: 0px 0px 15px 8px rgba(255, 255, 255, 0.4);
     box-shadow: 0px 0px 15px 8px rgba(255, 255, 255, 0.4);
-
 }
 
 
@@ -909,19 +938,21 @@ form #send-btn:hover {
     margin: 30px 0 30px 0;
 }
 
+
 .login-container .login-form .form-group {
     width: 300px;
     color: #000000;
     font-size: 16px;
     margin-left: 20px;
     margin-right: 10px;
-
 }
+
 
 .login-container .login-form .form-group label {
     margin-left: 30px;
     font-weight: 600;
 }
+
 
 .login-container .login-form .form-group input {
     width: 250px;
@@ -932,12 +963,14 @@ form #send-btn:hover {
     text-transform: initial;
 }
 
+
 .login-container .login-form .remember-me {
     margin-top: 20px;
     margin-left: 50px;
     font-size: 16px;
     color: #000000;
 }
+
 
 .login-container .login-form button {
     border: 1px solid #52f9d2;
@@ -949,14 +982,15 @@ form #send-btn:hover {
     transition: 1s ease;
     margin-top: 20px;
     margin-left: 35%;
-
 }
+
 
 .login-container .login-form button:hover {
     background-color: #03f4bc;
     zoom: 102%;
     font-size: 18px;
 }
+
 
 .login-container .login-form a {
     color: #000000;
@@ -965,6 +999,7 @@ form #send-btn:hover {
     margin-right: 20px;
     margin-top: 50px;
 }
+
 
 .register-container {
     align-items: center;
@@ -984,6 +1019,7 @@ form #send-btn:hover {
     margin: 10px 50px;
 }
 
+
 .register-container .register-form input {
     border: 1px solid rgb(126, 124, 124);
     width: 300px;
@@ -991,6 +1027,7 @@ form #send-btn:hover {
     padding-left: 10px;
     text-transform: initial;
 }
+
 
 .register-container .register-form button {
     border: 1px solid #52f9d2;
@@ -1003,15 +1040,12 @@ form #send-btn:hover {
     margin-top: 10px;
 }
 
+
 .register-container .register-form button:hover {
     background-color: #03f4bc;
     zoom: 102%;
     font-size: 18px;
 }
-
-
-
-
 
 /* Kullanıcı Girişi Section End */
 
@@ -1024,14 +1058,16 @@ form #send-btn:hover {
 
 /* Small devices (phones, 576px and up)*/
 @media (max-width: 414px) {
-    body p {
-        font-size: 12px;
-    }
-
     body {
         width: 414px;
         overflow-x: hidden;
     }
+
+    
+    body p {
+        font-size: 12px;
+    }
+
 
     .header .navbar .container-fluid img {
         width: 50px;
@@ -1039,13 +1075,14 @@ form #send-btn:hover {
         height: auto;
     }
 
+
     .header .navbar .collapse {
         color: white;
         width: 390px;
-        
         margin: 0;
         padding: 0;
     }
+
 
     .header .navbar .container-fluid .navbar-toggler{
         font-size: 15px;
@@ -1054,14 +1091,13 @@ form #send-btn:hover {
     }
 
 
-
-
     .home {
         width: 414px;
         background-size: auto;
         background-image: url(../img/AnyConv.com__Başlıksız-22.webp);
         background-position: right;
     }
+
 
     .home .content {
         margin: 10px;
@@ -1075,17 +1111,27 @@ form #send-btn:hover {
         font-size: 15px;
     }
 
+
     .home .content p {
+        color: white;
         margin-top: 20px;
         font-size: 8px;
         width: 300px;
     }
+
+    .home .content #demo{
+
+        font-size: 20px;
+        color: white;
+    }
+
 
     .home .content .resume i{
         transform: scale(0.7);
         width: min-content;
     }
     
+
     .about{
         width: 400px;
         height: max-content;
@@ -1101,29 +1147,32 @@ form #send-btn:hover {
         padding: 10px;
     }
 
+
     .about .container .photo{
         height: fit-content;
         width: fit-content;
     }
+
 
     .about .container img{
         width: 90px;
         height: auto;
         margin: 1rem;
         padding: 0;
-
-
     }
+
 
     .about h1{
         margin: 0 20px;
         font-size: 14px;
     }
 
+
     .about .text{
         padding: 10px ;
         margin-right: 40px;
     }
+
 
     .about p{
         display:flexbox;
@@ -1133,10 +1182,12 @@ form #send-btn:hover {
         font-size: 8px;
     }
 
+
     .skills{
         margin: 5px 20px;
         padding: 0;
     }
+
 
     .skills .left-col{
         margin: 0;
@@ -1144,6 +1195,7 @@ form #send-btn:hover {
         width: 160px;
         height: fit-content;
     }
+
 
     .skills .left-col h2{
         font-size: 15px;
@@ -1156,11 +1208,13 @@ form #send-btn:hover {
         height: fit-content;
     }
 
+
     .skills .left-col .container img{
         width: 50px;
         height: 80px;
         padding: 10px;
     }
+
 
     .skills .left-col .container .bookname{
         font-size: 8px;
@@ -1170,6 +1224,7 @@ form #send-btn:hover {
         height: 50px;
     }
 
+
     .skills .right-col{
         margin: 0;
         padding: 0;
@@ -1177,17 +1232,20 @@ form #send-btn:hover {
         height: fit-content;
     }
 
+
     .skills .right-col h2{
         padding: 0;
         font-size: 13px;
     }
 
+
     .skills .right-col .container{
         padding: 0;
-        margin: 0;
+        margin: 10px 0;
         width: 200px;
         height: fit-content;
     }
+
 
     .skills .right-col .container img{
         width: 40px;
@@ -1203,18 +1261,18 @@ form #send-btn:hover {
     }
    
 
-    
-
     .services {
         margin: 0;
         padding: 20px;
         width: 414px;
-        height:1400px;
+        height:1300px;
     }
 
     .services .container{
         height: fit-content;
     }
+
+
     .services .container h1,
     .services .container span {
         padding: 0;
@@ -1226,6 +1284,8 @@ form #send-btn:hover {
     .services .services-list{
         height: max-content;
     }
+
+
     .services .services-list div {
         width: 200px;
         padding: 0;
@@ -1267,10 +1327,17 @@ form #send-btn:hover {
         padding-left: 20px;
     }
 
-    .portfolio .carousel {
-        width: 360px;
+    .portfolio .swiper {
+        width: 100%;
+        height: auto;
         margin-left: 10px;
-        float: left;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portfolio .swiper img{
+        width: 340px;
+        height: 200px;
     }
 
     .portfolio .portfolio_links{
@@ -1294,6 +1361,7 @@ form #send-btn:hover {
         height: 260px;
     }
 
+
     .portfolio .portfolio_links .portfolio_container a{
         margin: 10px;
         font-size: 8px;
@@ -1307,27 +1375,33 @@ form #send-btn:hover {
         padding: 0;
     }
 
+
     .blog h1{
         font-size: 15px;
         padding-left: 20px
     }
 
+
     .blog h1 {
         font-size: 20px;
     }
+
 
     .blog h2 {
         font-size: 15px;
         text-align: center;
     }
 
+
     .blog .left-col{
         margin: 10px 5px;
     }
 
+
     .blog .left-col .container-num {
         width: fit-content;
     }
+
 
     .blog .left-col .container-num .containerId{
         font-size: 60px;
@@ -1337,6 +1411,7 @@ form #send-btn:hover {
         
     }
 
+
     .blog .left-col .container{
         padding: 0;
         margin: 0;
@@ -1344,10 +1419,12 @@ form #send-btn:hover {
         height: 100px;
     }
 
+
     .blog .left-col .container .sub-title{
         margin: 0;
         text-align: center;
     }
+
 
     .blog .left-col .container .content-left-col img{
         padding: 0;
@@ -1356,10 +1433,12 @@ form #send-btn:hover {
         height: 50px;
     }
 
+
     .blog .left-col .container .content-right-col{
         width: 240px;
         margin: 6px;
     }
+
 
     .blog .left-col .container .content-right-col a{
         font-size: 10px;
@@ -1367,32 +1446,39 @@ form #send-btn:hover {
         border: 1px solid white;
     }
 
+
     #contact {
         width: 400px;
     }
+
 
     #contact h1{
         padding: 20px;
         font-size: 20px;
     }
 
+
     #contact .contact-info{
         margin: 50px;
     }
+
 
     #contact .form{
         margin: 50px;
         width: 250px;
     }
 
+
     #contact .form input{
         width: 250px;
         height: 20px;
     }
 
+
     #contact .form textarea{
         width: 250px;
     }
+
 
     #contact .form .btn{
         width: 250px;
@@ -1401,13 +1487,13 @@ form #send-btn:hover {
         font-size: 10px;
     }
 
+
     .footer{
-        width: 414px;
+        width: 100%;
     }
 
-
-
 }
+
 
 /* For Tabletes */
 
@@ -1416,10 +1502,12 @@ form #send-btn:hover {
         font-size: 12px;
     }
 
+
     body {
         width: 768px;
         overflow-x: hidden;
     }
+
 
     .header .navbar .container-fluid img {
         width: 50px;
@@ -1427,17 +1515,31 @@ form #send-btn:hover {
         height: auto;
     }
 
+
     .header .navbar .navbar-collapse {
         position: relative;
         display: flex;
         color: white;
         width: 390px;
         margin: 0;
-        text-align: right;
-        padding:  0 0 0 300px;
+        text-align: center;
+        padding:  0 0 0 20px;
         float: right;
         justify-content: right;
     }
+
+
+    .header .navbar .container-fluid .collapse {
+        margin: 10px 100px;
+        
+    }
+
+
+    .header .navbar .container-fluid .collapse a{
+        font-size: 8px;
+    }
+    
+
 
     .header .navbar .container-fluid .navbar-toggler{
         font-size: 15px;
@@ -1446,15 +1548,14 @@ form #send-btn:hover {
     }
 
 
-
-
     .home {
         width: 768px;
         background-size: auto;
         background-image: url(../img/AnyConv.com__Başlıksız-22.webp);
         background-position: right center;
-        background-size: 50%;
+        background-size: 40%;
     }
+
 
     .home .content {
         margin: 10px;
@@ -1468,17 +1569,20 @@ form #send-btn:hover {
         font-size: 20px;
     }
 
+
     .home .content p {
         margin-top: 20px;
         font-size: 13px;
         width: 400px;
     }
 
+
     .home .content .resume i{
         transform: scale(1);
         width: fit-content;
     }
     
+
     .about{
         width: 760px;
         height: max-content;
@@ -1495,29 +1599,32 @@ form #send-btn:hover {
         padding: 10px;
     }
 
+
     .about .container .photo{
         height: fit-content;
         width: fit-content;
     }
+
 
     .about .container img{
         width: 150px;
         height: auto;
         margin: 1rem;
         padding: 0;
-
-
     }
+
 
     .about h1{
         margin: 0 20px;
         font-size: 20px;
     }
 
+
     .about .text{
         padding: 10px ;
         margin-right: 10px;
     }
+
 
     .about p{
         display:flexbox;
@@ -1527,11 +1634,12 @@ form #send-btn:hover {
         font-size: 15px;
     }
 
-    .skills{
-        
+
+    .skills{ 
         margin: 5px 20px;
         padding: 0;
     }
+
 
     .skills .left-col{
         margin-left: 50px;
@@ -1540,9 +1648,11 @@ form #send-btn:hover {
         height: fit-content;
     }
 
+
     .skills .left-col h2{
         font-size: 20px;
     }
+
 
     .skills .left-col .container{
         padding: 0;
@@ -1551,11 +1661,13 @@ form #send-btn:hover {
         height: fit-content;
     }
 
+
     .skills .left-col .container img{
         width: 70px;
         height: 90px;
         padding: 10px;
     }
+
 
     .skills .left-col .container .bookname{
         font-size: 12px;
@@ -1565,6 +1677,7 @@ form #send-btn:hover {
         height: 50px;
     }
 
+
     .skills .right-col{
         margin-right: 70px;
         padding: 0;
@@ -1572,10 +1685,12 @@ form #send-btn:hover {
         height: fit-content;
     }
 
+
     .skills .right-col h2{
         padding: 0;
         font-size: 20px;
     }
+
 
     .skills .right-col .container{
         padding: 0;
@@ -1583,6 +1698,7 @@ form #send-btn:hover {
         width: 200px;
         height: fit-content;
     }
+
 
     .skills .right-col .container img{
         width: 40px;
@@ -1596,10 +1712,8 @@ form #send-btn:hover {
         padding: 12px;
         font-size: 10px;
     }
+
    
-
-    
-
     .services {
         margin: 0;
         padding: 20px;
@@ -1607,9 +1721,12 @@ form #send-btn:hover {
         height:auto;
     }
 
+
     .services .container{
         height: min-content;
     }
+
+
     .services .container h1,
     .services .container span {
         padding: 0;
@@ -1625,6 +1742,8 @@ form #send-btn:hover {
         width: 760px;
         height: min-content;
     }
+
+
     .services .services-list div {
         width: 200px;
         padding: 0;
@@ -1637,21 +1756,26 @@ form #send-btn:hover {
         transform: scale(0.5);
         margin-bottom: 10px;
     }
+
+
     .services .services-list div h2{
         font-size: 16px;
         padding-left: 15px;
         margin: 0;
     }
 
+
     .services .services-list div p{
         padding: 10px;
         font-size: 10px;
     }
 
+
     .services .services-list div a{
         font-size: 10px;
         float: right;
     }
+
 
     .portfolio {
         padding: 0;
@@ -1660,10 +1784,12 @@ form #send-btn:hover {
         height: auto;
     }
 
+
     .portfolio h1 {
         font-size: 15px;
         padding-left: 20px;
     }
+
 
     .portfolio .carousel {
         width: 700px;
@@ -1675,9 +1801,9 @@ form #send-btn:hover {
         padding: 0;
         margin: 0;
         width: 760px;
-        height: 400px;
-        
+        height: 400px; 
     }
+
 
     .portfolio .portfolio_links .portfolio_container{
         padding: 50px 0;
@@ -1687,15 +1813,23 @@ form #send-btn:hover {
         height: 300px;
     }
 
+
     .portfolio .portfolio_links .portfolio_container img{
         width: 150px;
         height: 300px;
     }
 
+
     .portfolio .portfolio_links .portfolio_container a{
         margin: 10px;
         font-size: 8px;
         font-weight: 100;
+        opacity: 0.5;
+    }
+
+
+    .portfolio .portfolio_links .portfolio_container:hover a{
+        opacity: 1;
     }
 
 
@@ -1704,6 +1838,7 @@ form #send-btn:hover {
         margin: 20px;
         padding: 0;
     }
+
 
     .blog h1{
         font-size: 20px;
@@ -1716,22 +1851,25 @@ form #send-btn:hover {
         text-align: center;
     }
 
+
     .blog .left-col{
         margin: 10px 5px;
     }
 
+
     .blog .left-col .container-num {
         width: fit-content;
     }
+
 
     .blog .left-col .container-num .containerId{
         font-size: 60px;
         margin-top: 0;
         width: fit-content;
         padding-left: 17px;
-        padding-bottom: 27px;
-        
+        padding-bottom: 27px;  
     }
+
 
     .blog .left-col .container{
         padding: 0;
@@ -1740,10 +1878,12 @@ form #send-btn:hover {
         height: 110px;
     }
 
+
     .blog .left-col .container .sub-title{
         margin: 0;
         text-align: center;
     }
+
 
     .blog .left-col .container .content-left-col img{
         padding: 0;
@@ -1752,10 +1892,12 @@ form #send-btn:hover {
         height: 80px;
     }
 
+
     .blog .left-col .container .content-right-col{
         width: 550px;
         margin: 6px;
     }
+
 
     .blog .left-col .container .content-right-col a{
         font-size: 10px;
@@ -1763,32 +1905,39 @@ form #send-btn:hover {
         border: 1px solid white;
     }
 
+
     #contact {
         width: 760px;
     }
+
 
     #contact h1{
         padding: 20px;
         font-size: 20px;
     }
 
+
     #contact .contact-info{
         margin: 50px;
     }
+
 
     #contact .form{
         margin: 50px;
         width: 250px;
     }
 
+
     #contact .form input{
         width: 250px;
         height: 20px;
     }
 
+
     #contact .form textarea{
         width: 250px;
     }
+
 
     #contact .form .btn{
         width: 250px;
@@ -1797,12 +1946,10 @@ form #send-btn:hover {
         font-size: 10px;
     }
 
+
     .footer{
-        width: 767px;
+        width: 100%;
     }
-
-
-
 }
 
 /* MEDİA QUERİES End */
