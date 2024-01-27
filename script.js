@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'System.out.println("Merhaba! Ben Anıl ONGAN");';
+var txt = '<p>Merhaba! Ben Anıl ONGAN</p>';
 var speed = 50;
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -20,6 +20,9 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
+
+
+
 
 
 
